@@ -9,7 +9,6 @@ workflow.add_node("Writer", write_node)
 
 # Flow: Start -> Researcher -> Writer -> END
 workflow.set_entry_point("Researcher")
-workflow.set_entry_point("Researcher")
 workflow.add_edge("Researcher", "Writer")
 workflow.add_edge("Writer", END)
 
