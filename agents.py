@@ -17,7 +17,7 @@ def research_node(state: AgentState):
     print("Research complete.")
 
     return {
-        "research_data": state.get("research_data", []) | [results]
+        "research_data": state.get("research_data", []) + [results]
     }
 
 
